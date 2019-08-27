@@ -1,0 +1,51 @@
+﻿@model PhotoStudioDiploma.Models.GrantedFoldersToClientViewModel
+@{
+    ViewBag.Title = "GrantedFoldersToMe";
+}
+
+<h2>Folders that I have access to.</h2>
+
+<div id="folderContents">
+    <div>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageThumbnail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ContentName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OwnerPhotographer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfFiles)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Goto)
+                </th>
+            </tr>
+
+            @foreach (var folder in Model.Folders)
+            {
+                <tr>
+                    <td>
+                        <img src="~/Content/Images/smallFolderThumbnail.png" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => folder.FolderName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => folder.PhotographerFullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => folder.NumberOfFiles)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Browse folder", "ViewGrantedToClientFolder", "DropboxContent", new { folderId = folder.FolderId }, null)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

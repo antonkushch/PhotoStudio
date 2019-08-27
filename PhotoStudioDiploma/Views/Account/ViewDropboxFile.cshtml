@@ -1,0 +1,41 @@
+﻿@model PhotoStudioDiploma.Models.DropboxFileViewModel
+@{
+    ViewBag.Title = "ViewDropboxFile";
+}
+
+<h2>Dropbox file</h2>
+<h3>@ViewBag.FileNotFound</h3>
+
+<div>
+    @foreach (var prevFolder in Model.PreviousFolders)
+    {
+        <a id="goBackToFolder" onclick="goToPrevChosenFolder('@prevFolder.Path', @prevFolder.Depth)">Folder @prevFolder.Name</a>
+    }
+</div>
+
+<h4>@Model.FileName</h4>
+
+<img class="file--photo" src="@Model.LinkToFile" />
+
+@section Scripts{
+    <script type="text/javascript">
+        function goToPrevChosenFolder(path, depth) {
+            var url = "@Url.Action("DropboxAccountContents", "Account")";
+
+            var folderModel = {
+                FolderPath: path,
+                FolderDepth: depth
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(folderModel),
+                url: url,
+                contentType: "application/json",
+                success: function (response) {
+                    window.location.href = response.localUrl;
+                }
+            });
+        }
+    </script>
+}

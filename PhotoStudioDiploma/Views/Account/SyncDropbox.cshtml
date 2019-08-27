@@ -1,0 +1,32 @@
+﻿@model PhotoStudioDiploma.Models.SyncDropboxAccountViewModel
+@{
+    ViewBag.Title = "SyncDropbox";
+}
+
+<h2>Synchronize Dropbox account contents</h2>
+
+@using (Html.BeginForm("SyncDropbox", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <h4>Press the button to synchronize.</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-offset-4 col-md-10">
+            <input type="submit" class="btn btn-default" value="Synchronize" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="synced-message">
+            @Html.DisplayFor(mod => mod.Message)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="synced-message">
+            @Html.DisplayFor(mod => mod.SyncedFoldersMessage)
+        </div>
+    </div>
+}
+

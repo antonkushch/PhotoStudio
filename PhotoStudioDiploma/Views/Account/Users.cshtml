@@ -1,0 +1,43 @@
+﻿@model IEnumerable<PhotoStudioDiploma.Models.ApplicationUser>
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>All Users Of Our System</h2>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => user.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => user.UserName)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "DeleteUser", new { userId = user.Id }, null)
+            </td>
+        </tr>
+        }
+    </table>
+</div>

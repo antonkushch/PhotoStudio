@@ -1,0 +1,5 @@
+﻿@model PhotoStudioDiploma.Models.DropboxFolderGrantedToClient
+
+<h4>The folder '@Model.FolderName' granted from photographer '@Model.PhotographerFullName' is empty.</h4>
+
+@Html.ActionLink("Go back to granted folders", "GrantedFoldersToMe", "DropboxContent")

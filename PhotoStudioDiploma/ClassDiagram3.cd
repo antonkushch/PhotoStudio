@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PhotoStudioDiploma.BundleConfig" Collapsed="true">
+    <Position X="14.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\BundleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.FilterConfig" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.EmailService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.SmsService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.ApplicationUserManager" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.ApplicationSignInManager" Collapsed="true">
+    <Position X="23" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAAAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\IdentityConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.RouteConfig" Collapsed="true">
+    <Position X="21.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Startup" Collapsed="true">
+    <Position X="24.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\Startup.Auth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.MvcApplication" Collapsed="true">
+    <Position X="24.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAEgAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.AccountController">
+    <Position X="3.25" Y="3.75" Width="2.25" />
+    <NestedTypes>
+      <Class Name="PhotoStudioDiploma.Controllers.AccountController.ChallengeResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\AccountController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAgAJACgACAAAQAEAAFgACAAARRFIIIgQAEwAFQgAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.DropboxContentController">
+    <Position X="0.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhACAAAAAAAAAAABgAAAEAABmAJAAAAEAAAAABAA=</HashCode>
+      <FileName>Controllers\DropboxContentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.HomeController">
+    <Position X="0.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.ManageAccessController">
+    <Position X="5.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAAAAAAAAAQBJgQAAgAABEAAEAAEAAAEAgAAA=</HashCode>
+      <FileName>Controllers\ManageAccessController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.WebhooksController" Collapsed="true">
+    <Position X="17.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAgA=</HashCode>
+      <FileName>Controllers\WebhooksController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.CustomAttributes.DuplicateAuthAttribute" Collapsed="true">
+    <Position X="16" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CustomAttributes\DuplicateAuthAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Controllers.CustomAttributes.EmailConfirmedAttribute" Collapsed="true">
+    <Position X="19.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CustomAttributes\EmailConfirmedAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.ApplicationUserDTO" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\ApplicationUserDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.DropboxAuthSecondStep" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>DTO\ComplexDTOs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.DropboxAccountFileSystem" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAACAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>DTO\DropboxFileSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.DropboxFolder" Collapsed="true">
+    <Position X="23" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAIAAAAIAAAAAAAQAAEACAAAgAAAAAAAAAKA=</HashCode>
+      <FileName>DTO\DropboxFileSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.DropboxFile" Collapsed="true">
+    <Position X="16" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAIAAAQAAIQAAAAABAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\DropboxFileSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.GrantAccessDTO" Collapsed="true">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\GrantAccessDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DTO.GrantAccessToUserDTO" Collapsed="true">
+    <Position X="23" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\GrantAccessDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DALModels.AccountManager" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\SimpleDTOs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DALModels.DropboxAuth" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>DTO\SimpleDTOs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DALModels.LoginDTO" Collapsed="true">
+    <Position X="17.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\SimpleDTOs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.DALModels.RegisterDTO" Collapsed="true">
+    <Position X="10.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\SimpleDTOs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.ContentNotFoundException" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ContentNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.DropboxFolderEmptyException" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DropboxFolderEmptyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.GrantAccessToFolderException" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\GrantAccessToFolderException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.DuplicateGrantingError" Collapsed="true">
+    <Position X="17.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Exceptions\GrantAccessToFolderException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.ErrorSink&lt;T&gt;" Collapsed="true">
+    <Position X="23" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIABAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\GrantAccessToFolderException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.NoAccessToContentException" Collapsed="true">
+    <Position X="14.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoAccessToContentException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.NoFoldersGrantedToClientException" Collapsed="true">
+    <Position X="16" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoFoldersGrantedToClientException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Exceptions.SyncNeededException" Collapsed="true">
+    <Position X="14.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\SyncNeededException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Infrastructure.DbFactory" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Infrastructure\DbFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Infrastructure.Disposable" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IDbFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Infrastructure.RepositoryBase&lt;T&gt;" Collapsed="true">
+    <Position X="17.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYABACAAAAgAABgAAAAAAEAAAEAAAAACgAAAIAAAIA=</HashCode>
+      <FileName>Infrastructure\RepositoryBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Infrastructure.UnitOfWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.InitialCreate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201903122208105_InitialCreate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.NewMigration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201903142036292_NewMigration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.AddPhotographerFoldersAndFiles" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201903291943438_AddPhotographerFoldersAndFiles.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.ChangedFileSizeTypeToLong" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201903300009399_ChangedFileSizeTypeToLong.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.AddGrantedFolders" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201904162015475_AddGrantedFolders.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.AddCursorAndDropboxId" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201905021335500_AddCursorAndDropboxId.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.AddClientInfoCascadeDelete" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201906171550145_AddClientInfoCascadeDelete.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.AddPhotographerInfoCascadeDel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201906201504377_AddPhotographerInfoCascadeDel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Migrations.Configuration" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ProfileViewModel" Collapsed="true">
+    <Position X="24.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAACAAAAAAAQAAAAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.LoginViewModel" Collapsed="true">
+    <Position X="21.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.RegisterViewModel" Collapsed="true">
+    <Position X="14.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACEAAAAAAQAAAAQABAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.RegisterType" Collapsed="true">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ResetPasswordViewModel" Collapsed="true">
+    <Position X="19.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAgAAAAAAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ForgotPasswordViewModel" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.DropboxFolderContentsViewModel" Collapsed="true">
+    <Position X="24.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIBAgAAABAAAQAACAgBAAAAAAgAAAAAAIAAIA=</HashCode>
+      <FileName>Models\DropboxModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.DropboxFileViewModel" Collapsed="true">
+    <Position X="21.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAABAAAQAAAAAAAAAAAAgAABAAABAAAA=</HashCode>
+      <FileName>Models\DropboxModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.DropboxFolderGotoViewModel" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DropboxModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.GrantAccessToFoldersViewModel" Collapsed="true">
+    <Position X="21.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAAAAEAgAAAA=</HashCode>
+      <FileName>Models\GrantAccessToFoldersViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.GrantedFoldersViewModel" Collapsed="true">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GrantAccessToFoldersViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.DropboxFolderGrantedToClient" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAIAAEAgACgAAAAAAIABAAAAAAAIA=</HashCode>
+      <FileName>Models\GrantedFoldersToClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.DropboxFileGrantedToClient" Collapsed="true">
+    <Position X="17.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAgAAAAAQAAIQAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GrantedFoldersToClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.DropboxFileGrantedToClientViewModel" Collapsed="true">
+    <Position X="19.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GrantedFoldersToClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.GrantedFoldersToClientViewModel" Collapsed="true">
+    <Position X="24.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABIAAgAAAAAQAAAAAgEAAAAAAAAAAAAIAAIA=</HashCode>
+      <FileName>Models\GrantedFoldersToClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.GoToGrantedFolderViewModel" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GrantedFoldersToClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ApplicationUser" Collapsed="true">
+    <Position X="24.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAACAAAAAQAAAAAAAQABAAAAAEAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.PhotographerInfo" Collapsed="true">
+    <Position X="21.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAACQAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ClientInfo" Collapsed="true">
+    <Position X="17.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACwAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.PhotographerFolder" Collapsed="true">
+    <Position X="19.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQACAAAAAKQEAAAAAQAAAACAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.PhotographerFile" Collapsed="true">
+    <Position X="17.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAIAAAAgAIAAIAAAIQAAAAABAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ApplicationDbContext" Collapsed="true">
+    <Position X="21.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAEAAAAEAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.IndexViewModel" Collapsed="true">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAQAAAEAEA=</HashCode>
+      <FileName>Models\ManageViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.ConfirmRevokeGrantViewModel" Collapsed="true">
+    <Position X="21.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIAAABAA=</HashCode>
+      <FileName>Models\RevokeGrantViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Models.SyncDropboxAccountViewModel" Collapsed="true">
+    <Position X="12.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEQAAAAgAAAAAAAAAAAAAAAAAAEAIAAAAAA=</HashCode>
+      <FileName>Models\SyncDropboxAccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.DropboxAccountService" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="14" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAgACAAAAUAgIAAKGCAAAEQAAAAJAQEAiEAAIAAAA=</HashCode>
+      <FileName>Services\DropboxAccountService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.GrantAccessService" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="14.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAQIAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\GrantAccessService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.LoginService" BaseTypeListCollapsed="true">
+    <Position X="11" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Services\LoginService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.ProfileService" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAAAAAABAEAA=</HashCode>
+      <FileName>Services\ProfileService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.RegistrationService" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="17.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAAAAAQAAAAAAAAAAAAIAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Services\RegistrationService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.FileExtensionsManager.FileExtensions" Collapsed="true">
+    <Position X="24.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAAAAAE=</HashCode>
+      <FileName>Services\FileExtensionsManager\FileExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Services.SyncDropboxAccountManager.SyncDropboxAccount" Collapsed="true">
+    <Position X="10.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAoAAQIAAEAgAgIIMACAEAAABAAAABAAAAREAAAEAAg=</HashCode>
+      <FileName>Services\SyncDropboxAccountManager\SyncDropboxAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoStudioDiploma.Util.NinjectRegistrations" Collapsed="true">
+    <Position X="12.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Util\NinjectRegistrations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PhotoStudioDiploma.Infrastructure.IDbFactory" Collapsed="true">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IDbFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Infrastructure.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="21.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAgAABAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Infrastructure\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Infrastructure.IUnitOfWork" Collapsed="true">
+    <Position X="23" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Services.IDropboxAccountService">
+    <Position X="3.25" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAACAAAAEAgAAAKECAAAEQAAAAJAAEAiEAAAAAAA=</HashCode>
+      <FileName>Services\DropboxAccountService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Services.IGrantAccessService">
+    <Position X="10" Y="12.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\GrantAccessService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Services.ILoginService">
+    <Position X="5.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Services\LoginService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Services.IProfileService">
+    <Position X="7.5" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAAAAAABAEAA=</HashCode>
+      <FileName>Services\ProfileService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PhotoStudioDiploma.Services.IRegistrationService">
+    <Position X="12" Y="12.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Services\RegistrationService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="PhotoStudioDiploma.Models.RegTypeEnum" Collapsed="true">
+    <Position X="10.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\AccountViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

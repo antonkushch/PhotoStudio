@@ -1,0 +1,10 @@
+﻿@model PhotoStudioDiploma.Models.DropboxFileGrantedToClientViewModel
+@{
+    ViewBag.Title = "ViewGrantedToClientFile";
+}
+
+@Html.ActionLink("Go back", "ViewGrantedToClientFolder", "Account", new { folderId = Model.FolderId }, null)
+
+<h4>@Model.File.Name</h4>
+
+<img class="file--photo" src="@Model.File.LinkToFile" />

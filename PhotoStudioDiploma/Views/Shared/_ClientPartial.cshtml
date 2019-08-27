@@ -1,0 +1,6 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated && User.IsInRole("client"))
+{
+    <li>@Html.ActionLink("Folders I have access to", "GrantedFoldersToMe", "DropboxContent")</li>
+}
+    

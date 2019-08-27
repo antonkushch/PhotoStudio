@@ -1,0 +1,15 @@
+﻿@model PhotoStudioDiploma.Models.ConfirmRevokeGrantViewModel
+
+<div class="modal-content">
+    <div class="modal-header alert alert-danger">
+        <button class="close" data-dismiss="modal" area-hidden="true">X</button>
+        <h4 class="modal-title">Confirm revoking</h4>
+    </div>
+    <div class="modal-body">
+        <p class="success-message">@Model.Message</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-success revokegrant-confirm" onclick="confirmRevoke()">Yes</button>
+        <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+﻿@model PhotoStudioDiploma.Models.GrantedFoldersViewModel
+@{
+    ViewBag.Title = "GrantedFolders";
+}
+
+<h2>Granted folders.</h2>
+
+@foreach (var folder in Model.DropboxFolders)
+{
+    <p id="@folder.PhotographerFolderId">@folder.Path</p>
+    <ul id="@folder.PhotographerFolderId">
+        @foreach (var grantedUser in folder.GrantedUsers)
+        {
+            <li id="@folder.PhotographerFolderId@grantedUser.Id">
+                @Html.DisplayFor(itemModel => grantedUser.Email)
+                @Html.ActionLink("Revoke Grant", "RevokeGrant", "ManageAccess", new { folderPath = folder.Path, userEmail = grantedUser.Email }, new { @class = "revokeGrantPopup", dataFolderPath = folder.Path, dataUserEmail = grantedUser.Email, dataFolderId = folder.PhotographerFolderId, dataUserId = grantedUser.Id })
+            </li>
+        }
+    </ul>
+}
+
+<div id="confirmationDialog" class="modal fade">
+    <div id="dialogContent" class="modal-dialog"></div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+    var folderPath, userEmail, dataFolderId, dataUserId;
+    function confirmRevoke() {
+        var url = "@Url.Action("RevokeGrantConfirm", "ManageAccess")";
+
+        $.ajax({
+            type: "POST",
+            data: { "folderPath": folderPath, "userEmail": userEmail },
+            url: url,
+            success: function (data) {
+                if (data.success) {
+                    if ($('.modal-header').hasClass('alert-danger')) {
+                        $('.modal-header').removeClass('alert-danger').addClass('alert-success');
+                        //hide ok button as it is not necessary
+                        $('.revokegrant-confirm').css('display', 'none');
+                    }
+                    $('.success-message').html('Access to folder revoked successfully.');
+
+                    // removing user from the folder's list of granted users
+                    $("#" + dataFolderId + dataUserId).remove();
+                    if ($("ul#" + dataFolderId + " li").length < 1) {
+                        $("#" + dataFolderId).remove();
+                    }
+                }
+                else {
+                    if (!$(".modal-header").hasClass("alert-danger")) {
+                        $(".modal-header").removeClass("alert-success").addClass("alert-danger");
+                        $(".revokegrant-confirm").css("display", "none");
+                    }
+                    $(".success-message").html(data.errorMsg);
+                }
+            },
+            error: function (err) {
+                if (!$(".modal-header").hasClass("alert-danger")) {
+                    $(".modal-header").removeClass("alert-success").addClass("alert-danger");
+                    $(".revokegrant-confirm").css("display", "none");
+                }
+                $(".success-message").html(err.statusText);
+            }
+        });
+    }
+
+    function jq(myid) {
+        return "#" + myid.replace(/([!"#$%&'()*+,./:;<=>?@@\[\\\]^`{|}~])/g, "\\$1");
+    }
+
+    $(".revokeGrantPopup").click(function (e) {
+        folderPath = $(this).attr('dataFolderPath');
+        userEmail = $(this).attr('dataUserEmail');
+        dataFolderId = $(this).attr('dataFolderId');
+        dataUserId = $(this).attr('dataUserId');
+        e.preventDefault();
+        $.get(this.href, function (data) {
+            $('#dialogContent').html(data);
+            $("#confirmationDialog").modal("show");
+        });
+    });
+
+    $("#confirmationDialog").on("hidden.bs.modal", function () {
+        $(".modal-header").removeClass(' ').addClass('alert-danger');
+        $('.revokegrant-confirm').css('display', 'inline-block');
+        $('.success-message').html('').html('Are you sure you wish to delete this record ?');
+    });
+    </script>
+}

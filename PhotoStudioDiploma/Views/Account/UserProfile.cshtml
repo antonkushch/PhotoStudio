@@ -1,0 +1,50 @@
+﻿@model PhotoStudioDiploma.Models.ProfileViewModel
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+<div>
+    <h4>Profile information</h4>
+    <hr />
+    <dl class="dl-horizontal profile-info">
+        <div>
+            <dt>Person:</dt>
+            <dd>
+                <p>@Model.Name @Model.Surname</p>
+            </dd>
+        </div>
+
+        <div>
+            <dt>Username:</dt>
+            <dd>
+                <p>@Model.Username</p>
+            </dd>
+        </div>
+
+        <div>
+            <dt>Email:</dt>
+            <dd>
+                <p>@Model.Email</p>
+            </dd>
+        </div>
+
+        <div>
+            <dt>You are a:</dt>
+            <dd>
+                <p>@Model.RegisterType</p>
+            </dd>
+        </div>
+
+        @if (Model.DropboxAccountInfo.Length != 0)
+        {
+        <div>
+            <dt>Dropbox account info:</dt>
+            <dd>
+                <p>@Model.DropboxAccountInfo</p>
+            </dd>
+        </div>
+        }
+    </dl>
+</div>

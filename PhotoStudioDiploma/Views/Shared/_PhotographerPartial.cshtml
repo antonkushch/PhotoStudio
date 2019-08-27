@@ -1,0 +1,10 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated && User.IsInRole("photographer"))
+{
+    <li>@Html.ActionLink("Dropbox account", "DropboxAccountContents", "DropboxContent")</li>
+    <li>@Html.ActionLink("Granting", "GrantAccessToFolders", "ManageAccess")</li>
+    <li>@Html.ActionLink("Granted folders", "GrantedFolders", "ManageAccess")</li>
+    <li>@Html.ActionLink("Sync Dropbox", "SyncDropbox", "Account", null, new { id = "syncNeeded" })</li>    
+}
+
+

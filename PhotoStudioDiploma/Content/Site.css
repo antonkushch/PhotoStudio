@@ -1,0 +1,289 @@
+﻿html {
+	scroll-behavior: smooth;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+    border-radius: 4px !important;
+    color: #333333 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    padding: 6px 12px !important;
+}
+
+
+
+.navbar-fixed-top .container{
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 768px){
+	.navbar-collapse.collapse {
+		display: flex !important;
+		align-items: center;
+		width: calc(100% - 150px);
+	}	
+}
+
+.navbar-right {
+	height: 100%;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.navbar-collapse a {
+	font-size: 15px;
+}
+
+.dl-horizontal {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 15px;
+}
+
+#goBackToFolder {
+	margin-right: 5px;
+	font-size: 17px;
+}
+
+#goBackToFolder::after {
+	content: "";
+	display: inline-block;
+	margin-left: 2px;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	background: url(Images/right-arrow.svg) center/contain no-repeat;
+}
+
+.dl-horizontal a:last-child::after {
+	display: none;
+}
+
+.table th,
+.table td {
+	text-align: center;
+}
+
+.table tr th:first-child,
+.table tr td:first-child,
+.table tr th:last-child,
+.table tr td:last-child {
+	max-width: 70px;
+}
+
+.table thead > tr > th, 
+.table tbody > tr > th, 
+.table tfoot > tr > th, 
+.table thead > tr > td, 
+.table tbody > tr > td, 
+.table tfoot > tr > td {
+	padding: 15px;
+}
+
+footer {
+	margin-top: 40px;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 0;
+	color: #999999;
+	font-size: 14px;
+}
+
+footer b {
+	font-size: 27px;
+	font-weight: normal;
+}
+
+.main {
+	min-height: calc(100vh - 250px);
+}
+
+.form-horizontal .form-group{
+	max-width: 400px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#findUser {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#selectedUsers .user{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.glyphicon-remove-sign:before {
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url(Images/remove.svg) center/contain no-repeat;
+}
+
+.file--photo {
+	display: block;
+	margin: 20px auto;
+	max-height: 400px;
+}
+
+
+@media screen and (min-width: 768px) {
+	.container .jumbotron {
+		margin-top: 20px;
+		background: url(Images/main-bg.jpg) center/cover no-repeat;
+		padding-top: 50px;
+		padding-bottom: 250px;
+	}	
+}
+@media screen and (min-width: 768px) {
+	.container .jumbotron h1 {
+	font-size: 70px;
+}
+}
+
+.jumbotron .btn,
+.about--btn {
+	width: 180px;
+	padding: 12px;
+	margin-top: 100px;
+	margin-right: 40px;
+}
+
+.about {
+	text-align: center;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.about-text {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.about-btn {
+	margin: 0 auto;
+}
+
+.about-bg	{
+ 	position: absolute;
+	display: block;
+	top: 0;
+	left: 15px;
+	border-radius: 6px;
+	min-width: calc(100% - 30px);
+	min-height: 100%;
+	background: center/cover no-repeat;
+	z-index: -1;
+}
+
+.clients-bg {
+	background-image: url(Images/clients-bg.jpg);
+}
+
+.photographers-bg {
+	background-image: url(Images/photographers-bg.jpg);
+}
+
+.about-content {
+	color: black;
+	padding: 150px 0;
+	display: block;
+	border-radius: 6px;
+	min-width: calc(100% - 30px);
+	min-height: 100%;
+	background: rgba(255,255,255, 0.7);
+}
+
+.granting-submit {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.synced-message {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-info {
+    display: block;
+}
+
+.profile-info dd {
+    display: inline-block;
+}
+
+.profile-info div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-info dd {
+    width: 122px;
+    margin-left: 14px;
+    white-space: nowrap;
+}
+
+.profile-info dt {
+    width: 90px;
+}

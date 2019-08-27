@@ -1,0 +1,16 @@
+﻿@model PhotoStudioDiploma.Models.DropboxFolderGrantedToClient
+@{
+    ViewBag.Title = "ViewGrantedToClientFolder";
+}
+
+@if (Model.NumberOfFiles == 0)
+{
+    Html.RenderPartial("_DropboxFolderGrantedToClientEmptyPartial", Model);
+}
+else
+{
+    Html.RenderPartial("_DropboxFolderGrantedToClientPartial", Model);
+}
+
+
+

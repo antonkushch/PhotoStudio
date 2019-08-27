@@ -1,0 +1,40 @@
+﻿@model PhotoStudioDiploma.Models.GrantedFoldersToClientViewModel
+
+<h4>Folder '@Model.FolderName' granted from photographer '@Model.OwnerPhotographer'</h4>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(modelItem => modelItem.ImageThumbnail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(modelItem => modelItem.ContentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(modelItem => modelItem.Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(modelItem => modelItem.Goto)
+            </th>
+        </tr>
+
+        @foreach(var file in Model.Files)
+        {
+        <tr>
+            <td>
+                <img src="@String.Format($"data:image/png;base64,{Convert.ToBase64String(file.ThumbnailImage)}")" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => file.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => file.Size)
+            </td>
+            <td>
+                @Html.ActionLink("Browse file", "ViewDropboxFileGrantedToClient", "Account", new { dropboxFileId = file.PhotographerFileId }, null)
+            </td>
+        </tr>
+        }
+    </table>
+</div>

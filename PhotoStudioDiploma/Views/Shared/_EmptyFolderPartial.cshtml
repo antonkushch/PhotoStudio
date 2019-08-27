@@ -1,0 +1,10 @@
+﻿@model PhotoStudioDiploma.Models.DropboxFolderContentsViewModel
+
+<h4>The folder @Model.FolderPath is empty.</h4>
+
+<div class="dl-horizontal">
+    @foreach (var prevFolder in Model.PreviousFolders)
+    {
+        <a id="goBackToFolder" onclick="callGoToFolder('@prevFolder.Path', @prevFolder.Depth)">Folder @prevFolder.Name</a>
+    }
+</div>

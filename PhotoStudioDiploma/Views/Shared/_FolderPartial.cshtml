@@ -1,0 +1,94 @@
+﻿@model PhotoStudioDiploma.Models.DropboxFolderContentsViewModel
+
+<div class="dl-horizontal">
+    @foreach (var prevFolder in Model.PreviousFolders)
+    {
+        <a id="goBackToFolder" onclick="callGoToFolder('@prevFolder.Path', @prevFolder.Depth)">Folder @prevFolder.Name</a>
+    }
+</div>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageThumbnail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsFolder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Depth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Goto)
+            </th>
+        </tr>
+
+        @foreach (var folder in Model.DropboxFolders)
+        {
+            <tr>
+                <td>
+                    <img src="~/Content/Images/smallFolderThumbnail.png" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => folder.Name)
+                </td>
+                <td>
+                    @{
+                        bool isFolder = true;
+                    }
+                    @Html.DisplayFor(modelItem => isFolder)
+                </td>
+                <td>
+                    @{
+                        int folderDepth = folder.Depth - 1;
+                    }
+                    @Html.DisplayFor(modelItem => folderDepth)
+                </td>
+                <td>
+                    @{
+                        string missingFileSize = "-";
+                    }
+                    @Html.DisplayFor(modelItem => missingFileSize)
+                </td>
+                <td>
+                    @*<input type="button" id="goToFolder" onclick="callGoToFolder('@folder.Path', @folder.Depth)" value="Browse file" />*@
+                    <a id="goToFolder" onclick="callGoToFolder('@folder.Path', @folder.Depth)">Browse folder</a>
+                </td>
+            </tr>
+        }
+
+        @foreach (var file in Model.DropboxFiles)
+        {
+            <tr>
+                <td>
+                    <img src="@String.Format($"data:image/png;base64,{Convert.ToBase64String(file.ThumbnailImage)}")" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => file.Name)
+                </td>
+                <td>
+                    @{
+                        bool isFolder = false;
+                    }
+                    @Html.DisplayFor(modelItem => isFolder)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => file.Depth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => file.Size)
+                </td>
+                <td>
+                    @Html.ActionLink("Browse file", "ViewDropboxFile", "DropboxContent", new { dropboxFileId = file.PhotographerFileId }, null)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

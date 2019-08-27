@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Photo Studio</h1>
+    <p class="lead">Web service for issuing photo orders.</p>
+    <p>
+        <a href="#clients" class="btn btn-primary btn-lg">For clients</a>
+        <a href="#photographers" class="btn btn-primary btn-lg">For photographers</a>
+    </p>
+</div>
+
+
+<div class="row about" id="clients">
+    <div class="about-bg clients-bg"></div>
+
+    <div class="about-content">
+        <h2>For clients</h2>
+        <p class="about-text">As a client you get the benefit of viewing and getting the photos you want from the photographers that you trust. Confirm your account and you are ready to receive the photos that are intended for you.</p>
+
+        <p>
+            <a href="/Account/Register" class="about-btn btn btn-primary btn-lg">Register</a>
+        </p>
+    </div>
+
+</div>
+
+
+<div class="row about" id="photographers">
+    <div class="about-bg photographers-bg"></div>
+
+    <div class="about-content">
+        <h2>For photographers</h2>
+        <p class="about-text">As a photographer you get the benefit of a intuitive interface for issuing photo works for your clients. Moreover there is a system for integrating your account with Dropbox as well as synchronizing contents to keep everything up to date.</p>
+
+        <p>
+            <a href="/Account/Register" class="about-btn btn btn-primary btn-lg">Register</a>
+        </p>
+    </div>
+</div>
