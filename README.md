@@ -1,0 +1,2 @@
+# PhotoStudio
+Web app to help photographers comfortably share their work with their client, includes a registration system, integration with Dropbox account of photographer, syncing contents of Dropbox account with local data in database (includes renaming, deleting, adding files/folders), sending confirmation emails. Developed using ASP.NET MVC with registration system (ASP.NET Identity), integration with Dropbox via Dropbox API, sending emails via SendGrid.
